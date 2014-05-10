@@ -1,0 +1,22 @@
+# Ignore docs files
+_gh_pages
+_site
+.ruby-version
+
+# OS or editor artifacts
+.DS_Store
+._*
+.sass-cache
+.cache
+
+# Ignore extensions
+*.diff
+*.err
+*.orig
+*.log
+*.rej
+*.swo
+*.swp
+*.zip
+*.vi
+*~

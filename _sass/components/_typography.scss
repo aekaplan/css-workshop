@@ -1,0 +1,27 @@
+h1, h2, h3, h4  {
+  font: $header-font;
+  margin: 0;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: .5em;
+}
+
+p { margin: 0; }
+
+ul {
+  margin: 0;
+  padding: 0;
+
+  li { list-style: none; }
+}
+
+a {
+  color: $red;
+  text-decoration: none;
+
+  &:hover { color: $black; }
+}
+
+

@@ -1,0 +1,13 @@
+# Site settings
+name: Adam Kaplan
+title: Grid Retrospective
+description: "A simple guide to responsive design."
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+permalinks: pretty
+
+# Sass settings
+sass:
+  style: :compressed
