@@ -17,3 +17,38 @@ body {
   margin: 0 auto;
   width: 90%;
 }
+
+nav {
+  @extend %clearfix;
+  margin-bottom: 1em;
+  max-height: 0;
+  overflow: hidden;
+
+  .nav-item {
+    @media #{$small} {
+      float: left;
+      margin-left: 1.5em;
+
+      &:first-child { margin: 0; }
+    }
+  }
+
+  &.is-open {
+    max-height: 900px;
+  }
+
+  @media #{$small} {
+    display: block;
+    max-height: 300px;
+  }
+}
+
+.nav-toggle {
+  cursor: pointer;
+
+  &:before { content:'\2630'; }
+
+  @media #{$small} {
+    display: none;
+  }
+}
