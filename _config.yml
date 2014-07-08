@@ -2,7 +2,7 @@
 name: Adam Kaplan
 title: Grid Retrospective
 description: "A simple guide to responsive design."
-baseurl: ""
+baseurl: "/grid-retrospective"
 
 # Build settings
 markdown: kramdown
