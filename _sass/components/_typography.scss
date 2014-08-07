@@ -1,27 +1,60 @@
+/* ==========================================================================
+   Headings
+   ========================================================================== */
+
 h1, h2, h3, h4  {
   font: $header-font;
-  margin: 0;
-}
-
-h1 {
-  font-size: 2em;
+  margin-top: 0;
   margin-bottom: .5em;
 }
 
-p { margin: 0; }
+h1 {
+  font-size: 2.5em;
+  line-height: 1.2;
+}
 
-ul {
+h2 {
+  font-size: 1.8em;
+  line-height: 1.333;
+}
+
+h3 {
+  font-size: 1.2em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: .9em;
+  letter-spacing: .125em;
+  margin-bottom: .3em;
+  text-transform: uppercase;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1.5em;
+
+  &.lead {
+    font-size: 1.2em;
+    margin-bottom: .5em;
+  }
+}
+
+.clean-list {
   margin: 0;
   padding: 0;
 
   li { list-style: none; }
 }
 
+/* ==========================================================================
+   Links
+   ========================================================================== */
+
 a {
-  color: $red;
-  text-decoration: none;
+  color: $black;
+  text-decoration: underline;
 
-  &:hover { color: $black; }
+  &:hover { text-decoration: none; }
 }
-
-

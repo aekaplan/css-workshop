@@ -1,32 +1,22 @@
 // Font Weights
-$light:   300;
-$regular: 400;
-$bold:    600;
+$regular:  400;
+$bold:     600;
 
 // Base Font
-$base-font: $regular 100%/1.65 "Helvetica Neue", Helvetica, sans-serif;
+$base-font: $regular 112%/1.5 "soleil", sans-serif;
 
 // Header Font
-$header-font: $bold 100%/1.25 "Helvetica Neue", Helvetica, sans-serif;
+$header-font: $bold 100%/1.25 "futura-pt", sans-serif;
 
 // Colors
-$header-color:         #655d56;
-$body-color:           #fff;
-$border-light:         #eee;
-$border-dark:          #ddd;
+$primary-color:  #f68c00;
+$white:          #fff;
+$black:          #0b0e10;
+$gray:           #fafafa;
 
-$primary-color:        #f68c00;
-$primary-color-hover:  #bf6c00;
-
-$black:                #504740;
-$white:                #fff;
-$light-gray:           #b2b0ad;
-$medium-gray:          #919191;
-$gray:                 #807e7c;
-$blue:                 #504740;
-$green:                #68b13b;
-$dark-green:           #62b22f;
-$red:                  #ff483a;
+$body-color:     #fff;
+$border-light:   #eee;
+$border-dark:    #ddd;
 
 // Primary Button Color
 $primary-button:                 $primary-color;
@@ -42,11 +32,8 @@ $secondary-button-border:        darken(#e8e8e8, 15%);
 // Grid
 $content-width: 32em;
 
-// Mobile
-$small: "(min-width: 30em)";
+// Medium screens
+$medium: "(min-width: 40em)";
 
-// Tablet
-$medium: "(max-width: 40em)";
-
-// Desktop
-$large: "(max-width: 50em)";
+// Large screens
+$large: "(min-width: 64em)";

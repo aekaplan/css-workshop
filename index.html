@@ -1,39 +1,109 @@
 ---
 layout: default
 ---
+<section id="lists">
+  <div class="container">
+    <h2>Directory structure</h2>
+    <p>Partials are organzied by components, mixins, and variables. Mixins
+    and variables should not include any Sass that actually output <code>CSS</code>.</p>
 
-<nav>
-  <ul>
-    <li class="nav-item">Nav Item 1</li>
-    <li class="nav-item">Nav Item 2</li>
-    <li class="nav-item">Nav Item 3</li>
-  </ul>
-</nav>
+    <div class="example">
+      {% highlight html %}
+        {% include html/directory.html %}
+      {% endhighlight %}
+    </div>
 
-<span class="nav-toggle" data-id="navigation-toggle"></span>
+    <h2>Primary stylesheet</h2>
+    <p>The primary stylesheet <code>basement.scss</code> allows you to keep everything
+       nice and clean. <strong>The order is very important!</strong> Stylesheets read from top to bottom,
+      and styles are applied on top of one another.</p>
 
-<h1>Lorem ipsum</h1>
+    <div class="example">
+      {% highlight scss %}
+        {% include scss/basement.scss %}
+      {% endhighlight %}
+    </div>
+  </div>
+</section>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam interdum dolor
-  quis purus malesuada, vitae commodo augue malesuada. Aliquam a ligula ut ligula
-  cursus vestibulum. Class aptent taciti sociosqu ad litora torquent per conubia
-  nostra, per inceptos himenaeos. Aliquam et iaculis dui. Praesent vel dolor
-  placerat metus egestas condimentum sit amet a turpis. Praesent auctor semper
-  sapien eu pharetra. In at urna congue, ornare eros vitae, iaculis libero.
-  Proin ultrices ut lacus dapibus fermentum.</p>
+<section id="lists">
+  <div class="container">
+    <h2>Lists</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam interdum dolor
-  quis purus malesuada, vitae commodo augue malesuada. Aliquam a ligula ut ligula
-  cursus vestibulum. Class aptent taciti sociosqu ad litora torquent per conubia
-  nostra, per inceptos himenaeos. Aliquam et iaculis dui. Praesent vel dolor
-  placerat metus egestas condimentum sit amet a turpis. Praesent auctor semper
-  sapien eu pharetra. In at urna congue, ornare eros vitae, iaculis libero.
-  Proin ultrices ut lacus dapibus fermentum.</p>
+    <div class="example">
+      <ul class="clean-list">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ul>
+    </div>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam interdum dolor
-  quis purus malesuada, vitae commodo augue malesuada. Aliquam a ligula ut ligula
-  cursus vestibulum. Class aptent taciti sociosqu ad litora torquent per conubia
-  nostra, per inceptos himenaeos. Aliquam et iaculis dui. Praesent vel dolor
-  placerat metus egestas condimentum sit amet a turpis. Praesent auctor semper
-  sapien eu pharetra. In at urna congue, ornare eros vitae, iaculis libero.
-  Proin ultrices ut lacus dapibus fermentum.</p>
+    <div class="example html">
+      {% highlight html %}
+        {% include html/list.html %}
+      {% endhighlight %}
+    </div>
+
+    <div class="example scss">
+      {% highlight scss %}
+        {% include scss/list.scss %}
+      {% endhighlight %}
+    </div>
+  </div>
+</section>
+
+<section id="headers">
+  <div class="container">
+    <h2>Headers</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+    <div class="example">
+      <h1>Heading 1</h1>
+      <h2>Heading 2</h1>
+      <h3>Heading 3</h1>
+      <h4>Heading 4</h1>
+    </div>
+
+<div class="example html">
+{% highlight html %}
+<h1>Heading 1</h1>
+<h2>Heading 2</h1>
+<h3>Heading 3</h1>
+<h4>Heading 4</h1>
+{% endhighlight %}
+</div>
+
+<div class="example scss">
+{% highlight scss %}
+h1, h2, h3, h4  {
+  margin-top: 0;
+  margin-bottom: .5em;
+}
+
+h1 {
+  font-size: 2.5em;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 1.8em;
+  line-height: 1.333;
+}
+
+h3 {
+  font-size: 1.2em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: .9em;
+  letter-spacing: .125em;
+  margin-bottom: .3em;
+  text-transform: uppercase;
+}
+{% endhighlight %}
+</div>
+  </div>
+</section>
