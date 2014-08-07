@@ -38,6 +38,7 @@
 
 pre {
   margin: 0;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
 
   code {
     background: transparent;
@@ -50,6 +51,7 @@ pre {
 code {
   background: $gray;
   @include prefix-property(border-radius, 3px);
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
   font-size: .9em;
   padding: .15em .3em;
 }
@@ -59,10 +61,10 @@ code {
 .highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
 .highlight .k { font-weight: bold } /* Keyword */
 .highlight .o { font-weight: bold } /* Operator */
-.highlight .cm { color: #bbb; font-style: italic } /* Comment.Multiline */
-.highlight .cp { color: #bbb; font-weight: bold } /* Comment.Preproc */
-.highlight .c1 { color: #bbb; font-style: italic } /* Comment.Single */
-.highlight .cs { color: #bbb; font-weight: bold; font-style: italic } /* Comment.Special */
+.highlight .cm { color: #999; font-style: italic } /* Comment.Multiline */
+.highlight .cp { color: #999; font-weight: bold } /* Comment.Preproc */
+.highlight .c1 { color: #999; font-style: italic } /* Comment.Single */
+.highlight .cs { color: #999; font-weight: bold; font-style: italic } /* Comment.Special */
 .highlight .gd { color: #000000; background-color: #ffdddd } /* Generic.Deleted */
 .highlight .gd .x { color: #000000; background-color: #ffaaaa } /* Generic.Deleted.Specific */
 .highlight .ge { font-style: italic } /* Generic.Emph */
