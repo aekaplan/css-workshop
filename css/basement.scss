@@ -5,10 +5,8 @@
 @import "variables";
 @import "mixins";
 
-// Reset
-@import "components/normalize";
-
 // Components
+@import "components/normalize";
 @import "components/layout";
 @import "components/typography";
 @import "components/buttons";
