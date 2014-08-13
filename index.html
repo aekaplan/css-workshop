@@ -1,27 +1,33 @@
 ---
 layout: default
 ---
-<section id="lists">
+<section id="directory-structure">
   <div class="container">
     <h2>Directory structure</h2>
     <p>Partials are organzied by components, mixins, and variables. Mixins
     and variables should not include any Sass that actually output <code>CSS</code>.</p>
 
     <div class="example">
-      {% highlight html %}
-        {% include html/directory.html %}
-      {% endhighlight %}
+      <button class="copy-button">Copy</button>
+      <div class='copy-area'>
+        {% highlight html %}
+          {% include html/directory.html %}
+        {% endhighlight %}
+      </div>
     </div>
 
     <h2>Primary stylesheet</h2>
     <p>The primary stylesheet <code>basement.scss</code> allows you to keep everything
-       nice and clean. <strong>The order is very important!</strong> Stylesheets read from top to bottom,
+       nice and clean. The order is very important! Stylesheets read from top to bottom,
       and styles are applied on top of one another.</p>
 
     <div class="example">
-      {% highlight scss %}
-        {% include scss/basement.scss %}
-      {% endhighlight %}
+      <button class="copy-button">Copy</button>
+      <div class='copy-area'>
+        {% highlight scss %}
+          {% include scss/basement.scss %}
+        {% endhighlight %}
+      </div>
     </div>
   </div>
 </section>
@@ -40,15 +46,21 @@ layout: default
     </div>
 
     <div class="example html">
-      {% highlight html %}
-        {% include html/list.html %}
-      {% endhighlight %}
+      <button class="copy-button">Copy</button>
+      <div class="copy-area">
+        {% highlight html %}
+          {% include html/list.html %}
+        {% endhighlight %}
+      </div>
     </div>
 
     <div class="example scss">
-      {% highlight scss %}
-        {% include scss/list.scss %}
-      {% endhighlight %}
+      <button class="copy-button">Copy</button>
+      <div class="copy-area">
+        {% highlight scss %}
+          {% include scss/list.scss %}
+        {% endhighlight %}
+      </div>
     </div>
   </div>
 </section>
@@ -66,15 +78,21 @@ layout: default
     </div>
 
     <div class="example html">
-      {% highlight html %}
-        {% include html/headers.html %}
-      {% endhighlight %}
+      <button class="copy-button">Copy</button>
+      <div class="copy-area">
+        {% highlight html %}
+          {% include html/headers.html %}
+        {% endhighlight %}
+      </div>
     </div>
 
     <div class="example scss">
-      {% highlight scss %}
-        {% include scss/headers.scss %}
-      {% endhighlight %}
+      <button class="copy-button">Copy</button>
+      <div class="copy-area">
+        {% highlight scss %}
+          {% include scss/headers.scss %}
+        {% endhighlight %}
+      </div>
     </div>
   </div>
 </section>

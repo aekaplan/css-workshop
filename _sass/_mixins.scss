@@ -10,10 +10,6 @@
   @include prefix-property(transition, unquote($arguments));
 }
 
-@mixin transform($arguments) {
-  @include prefix-property(transform, unquote($arguments));
-}
-
 @mixin clearfix {
   *zoom: 1;
 

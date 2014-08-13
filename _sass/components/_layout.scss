@@ -14,13 +14,21 @@ body {
   font: $base-font;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+
+  @media #{$medium} {
+    font-size: 112%;
+  }
 }
 
 .container {
   margin: 0 auto;
   max-width: $content-width;
-  padding: 2em 0;
+  padding: 1.5em 0;
   width: 90%;
+
+  @media #{$medium} {
+    padding: 2.5em 0;
+  }
 }
 
 footer,
@@ -32,11 +40,20 @@ section { border-top: 1px solid $border-light; }
 
 nav {
   @extend %clearfix;
-  margin-bottom: 1em;
   max-height: 0;
   overflow: hidden;
 
+  .nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
   .nav-item {
+    cursor: pointer;
+
+    &:hover { text-decoration: underline; }
+
     @media #{$medium} {
       float: left;
       margin-left: 1.5em;

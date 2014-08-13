@@ -1,0 +1,21 @@
+.copy-button {
+  background-color: $white;
+  border: none;
+  border-bottom: 1px solid $border-light;
+  border-left: 1px solid $border-light;
+  @include prefix-property(border-radius, 0 3px);
+  color: #aaa;
+  cursor: pointer;
+  font-size: .7em;
+  padding: .6em .8em;
+  position: absolute;
+  right: 0;
+  top: 0;
+  outline: none;
+  @include prefix-property(transition, .2s);
+
+  &.zeroclipboard-is-hover {
+    background: $gray;
+    color: $black;
+  }
+}

@@ -60,3 +60,15 @@ a {
 
   &:hover { text-decoration: none; }
 }
+
+/* ==========================================================================
+   Labels
+   ========================================================================== */
+
+.construction-label {
+  font: $header-font;
+  background: #fff8dc;
+  @include prefix-property(border-radius, 3px);
+  font-size: .95em;
+  padding: .1em .4em;
+}
