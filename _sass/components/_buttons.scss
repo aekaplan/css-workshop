@@ -4,7 +4,7 @@
   border-bottom: 1px solid $border-light;
   border-left: 1px solid $border-light;
   @include prefix-property(border-radius, 0 3px);
-  color: #aaa;
+  color: $gray;
   cursor: pointer;
   font-size: .7em;
   padding: .6em .8em;
@@ -15,7 +15,7 @@
   @include prefix-property(transition, .2s);
 
   &.zeroclipboard-is-hover {
-    background: $gray;
+    background: $light-gray;
     color: $black;
   }
 }

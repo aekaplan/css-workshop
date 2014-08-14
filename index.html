@@ -1,10 +1,10 @@
 ---
 layout: default
 ---
-<section id="directory-structure">
+<section>
   <div class="container">
-    <h2>Directory structure</h2>
-    <p>Partials are organzied by components, mixins, and variables. The variables partial should not include any Sass that outputs <code>CSS</code>.</p>
+    <h2 id="directory-structure">Directory structure <a class="content-link icon-link" href="#directory-structure"></a></h2>
+    <p>Partials are organzied by components, mixins, and settings.</p>
 
     <div class="example">
       <button class="copy-button">Copy</button>
@@ -15,12 +15,12 @@ layout: default
       </div>
     </div>
 
-    <h2>Primary stylesheet</h2>
+    <h3>Primary stylesheet</h3>
     <p>The primary stylesheet <code>basement.scss</code> allows you to keep everything
-       nice and clean. The order is very important! Stylesheets read from top to bottom,
+       nice and clean. The order is important because stylesheets read from top to bottom,
       and styles are applied on top of one another.</p>
 
-    <div class="example">
+    <div class="example scss">
       <button class="copy-button">Copy</button>
       <div class='copy-area'>
         {% highlight scss %}
@@ -28,12 +28,24 @@ layout: default
         {% endhighlight %}
       </div>
     </div>
+
+    <h3>Settings</h3>
+    <p>The settings partial contains all your variables and should not include any Sass that outputs <code>CSS</code>.</p>
+
+    <div class="example scss">
+      <button class="copy-button">Copy</button>
+      <div class='copy-area'>
+        {% highlight scss %}
+          {% include scss/settings.scss %}
+        {% endhighlight %}
+      </div>
+    </div>
   </div>
 </section>
 
-<section id="lists">
+<section>
   <div class="container">
-    <h2>Lists</h2>
+    <h2 id="lists">Lists <a class="content-link icon-link" href="#lists"></a></h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
     <div class="example">
@@ -64,9 +76,9 @@ layout: default
   </div>
 </section>
 
-<section id="headers">
+<section>
   <div class="container">
-    <h2>Headers</h2>
+    <h2 id="headers">Headers <a class="content-link icon-link" href="#headers"></a></h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
     <div class="example">

@@ -1,27 +1,16 @@
-h1, h2, h3, h4 {
+h1, h2, h3, h4  {
+  font: $header-font;
   margin-top: 0;
   margin-bottom: .5em;
 }
 
-h1 {
-  font-size: 2.5em;
-  line-height: 1.2;
-}
-
-h2 {
-  font-size: 1.8em;
-  line-height: 1.333;
-}
-
-h3 {
-  font-size: 1.2em;
-  letter-spacing: .1em;
-  text-transform: uppercase;
-}
+h1 { font-size: 2.5em; }
+h2 { font-size: 1.8em; }
+h3 { font-size: 1.2em; }
 
 h4 {
   font-size: .9em;
-  letter-spacing: .125em;
+  letter-spacing: .1em;
   margin-bottom: .3em;
   text-transform: uppercase;
 }

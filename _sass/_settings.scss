@@ -1,0 +1,37 @@
+// Font Weights
+$regular: 400;
+$bold:    600;
+
+// Body Font
+$body-font: $regular 100%/1.5 "soleil", sans-serif;
+
+// Header Font
+$header-font: $bold 100%/1.25 "futura-pt", sans-serif;
+
+// Colors
+$primary-color: #4285f4;
+$white:         #fff;
+$light-gray:    #f7f7f7;
+$gray:          #bbb;
+$black:         #0b0e10;
+$yellow:        #fff8dc;
+$border-light:  #eee;
+$border-dark:   #ddd;
+
+// Primary Button Color
+$primary-button:       $primary-color;
+$primary-button-hover: darken($primary-color, 5%);
+
+// Grid
+$content-width: 32em;
+
+// Medium screens
+$medium: "(min-width: 40em)";
+
+// Large screens
+$large: "(min-width: 64em)";
+
+// Z-index
+$overlay-high: 9999;
+$overlay-med:  9000;
+$overlay-low:  8000;
