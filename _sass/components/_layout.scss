@@ -32,7 +32,48 @@ body {
 }
 
 footer,
-section { border-top: 1px solid $border-light; }
+section {
+  border-top: 1px solid $border-light;
+}
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+.logo { font-size: 2em; }
+
+.construction-label {
+  border: 1px solid $gray;
+  @include prefix-property(border-radius, 3px);
+  color: $gray;
+  display: inline-block;
+  font-size: .9em;
+  font-weight: $bold;
+  margin-top: 1em;
+  padding: .3em 1em;
+}
+
+/* ==========================================================================
+   Hero
+   ========================================================================== */
+
+.hero {
+  background: #363835 url("/images/stars.png") repeat;
+  background-size: 800px 800px;
+  color: $white;
+  overflow: hidden;
+  text-align: center;
+
+  .container {
+    padding: 2.5em 0;
+
+    @media #{$medium} {
+      padding: 6em 0;
+    }
+  }
+
+  a { color: $yellow; }
+}
 
 /* ==========================================================================
    Nav

@@ -88,15 +88,3 @@ a {
 
   &:hover { color: $black; }
 }
-
-/* ==========================================================================
-   Labels
-   ========================================================================== */
-
-.construction-label {
-  font: $header-font;
-  background: $yellow;
-  @include prefix-property(border-radius, 3px);
-  font-size: .95em;
-  padding: .1em .4em;
-}
