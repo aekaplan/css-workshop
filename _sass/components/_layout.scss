@@ -48,7 +48,7 @@ section {
    ========================================================================== */
 
 .hero {
-  background: #363835 url("../images/stars.png") repeat;
+  background: $black url("../images/stars.png") repeat;
   background-size: 700px 700px;
   color: $white;
   overflow: hidden;
@@ -80,7 +80,7 @@ section {
 
 nav {
   @include prefix-property(border-radius, 3px);
-  border: 1px solid $medium-gray;
+  border: 1px solid #60645e;
   margin-top: 2.5em;
   overflow: hidden;
 
@@ -101,7 +101,7 @@ nav {
   .nav-item {
     background: $black;
     @include prefix-property(transition, .2s);
-    color: #60645e;
+    color: $medium-gray;
     float: left;
     padding: 1em;
     text-align: center;
@@ -109,8 +109,8 @@ nav {
     text-decoration: none;
 
     &.add-border {
-      border-left: 1px solid $medium-gray;
-      border-right: 1px solid $medium-gray;
+      border-left: 1px solid #60645e;
+      border-right: 1px solid #60645e;
     }
 
     &:hover {
