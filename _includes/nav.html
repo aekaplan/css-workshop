@@ -1,10 +1,21 @@
-<div class="container">
-  <span class="nav-toggle icon-toggle" data-id="navigation-toggle"></span>
-  <nav>
-    <ul class="nav-list">
-      <li class="nav-item" scroller-id="directory-structure">Directory Structure</li>
-      <li class="nav-item" scroller-id="lists">Lists</li>
-      <li class="nav-item" scroller-id="headers">Headers</li>
-    </ul>
-  </nav>
-</div>
+<nav>
+  <ul class="nav-list">
+    <li {% if page.day-1 %}class="current"{% endif %}>
+      <a class="nav-item" href="{{ site.url }}/">
+        <h4 class="date">November 7</h4> Day 1
+      </a>
+    </li>
+
+    <li {% if page.day-2 %}class="current"{% endif %}>
+      <a class="nav-item add-border" href="{{ site.url }}/day-2/">
+        <h4 class="date">November 14</h4> Day 2
+      </a>
+    </li>
+
+    <li {% if page.day-3 %}class="current"{% endif %}>
+      <a class="nav-item" href="{{ site.url }}/day-3/">
+        <h4 class="date">November 21</h4> Day 3
+      </a>
+    </li>
+  </ul>
+</nav>

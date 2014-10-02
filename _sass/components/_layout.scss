@@ -21,6 +21,7 @@ body {
 }
 
 .container {
+  @extend %clearfix;
   margin: 0 auto;
   max-width: $content-width;
   padding: 1.5em 0;
@@ -42,17 +43,6 @@ section {
 
 .logo { font-size: 2em; }
 
-.construction-label {
-  border: 1px solid $gray;
-  @include prefix-property(border-radius, 3px);
-  color: $gray;
-  display: inline-block;
-  font-size: .9em;
-  font-weight: $bold;
-  margin-top: 1em;
-  padding: .3em 1em;
-}
-
 /* ==========================================================================
    Hero
    ========================================================================== */
@@ -68,7 +58,7 @@ section {
     padding: 2.5em 0;
 
     @media #{$medium} {
-      padding: 6em 0;
+      padding: 4em 0;
     }
   }
 
@@ -79,35 +69,65 @@ section {
    Nav
    ========================================================================== */
 
+.remove-padding {
+  width: 100%;
+  padding: 0;
+
+  @media #{$medium} {
+    padding: 0;
+  }
+}
+
 nav {
-  @extend %clearfix;
-  max-height: 0;
+  @include prefix-property(border-radius, 3px);
+  border: 1px solid $medium-gray;
+  margin-top: 2.5em;
   overflow: hidden;
 
   .nav-list {
+    @extend %clearfix;
     list-style: none;
     margin: 0;
     padding: 0;
   }
 
+  .current .nav-item {
+    background: #3e413d;
+    color: $yellow;
+
+    .date { color: $white; }
+  }
+
   .nav-item {
-    cursor: pointer;
+    background: $black;
+    @include prefix-property(transition, .2s);
+    color: #60645e;
+    float: left;
+    padding: 1em;
+    text-align: center;
+    width: 33.33333%;
+    text-decoration: none;
 
-    &:hover { text-decoration: underline; }
+    &.add-border {
+      border-left: 1px solid $medium-gray;
+      border-right: 1px solid $medium-gray;
+    }
 
-    @media #{$medium} {
-      float: left;
-      margin-left: 1.5em;
+    &:hover {
+      background: #3e413d;
+      color: $yellow;
 
-      &:first-child { margin: 0; }
+      .date { color: $white; }
     }
   }
 
-  &.is-open { max-height: 900px; }
-
-  @media #{$medium} {
+  .date {
+    @include prefix-property(transition, .2s);
+    color: $medium-gray;
     display: block;
-    max-height: 300px;
+    font-size: .75em;
+    font-weight: $regular;
+    white-space: nowrap;
   }
 }
 
