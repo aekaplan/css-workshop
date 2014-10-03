@@ -2,7 +2,7 @@
 name: CSS Workshop
 title: CSS Workshop
 description: ""
-baseurl: "/basement"
+baseurl: "/css-workshop"
 
 # Build settings
 markdown: kramdown
