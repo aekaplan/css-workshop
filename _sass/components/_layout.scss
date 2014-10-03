@@ -80,7 +80,7 @@ section {
 
 nav {
   @include prefix-property(border-radius, 3px);
-  border: 1px solid #60645e;
+  border: 1px solid $border-medium;
   margin-top: 2.5em;
   overflow: hidden;
 
@@ -109,8 +109,8 @@ nav {
     text-decoration: none;
 
     &.add-border {
-      border-left: 1px solid #60645e;
-      border-right: 1px solid #60645e;
+      border-left: 1px solid $border-medium;
+      border-right: 1px solid $border-medium;
     }
 
     &:hover {
@@ -124,10 +124,14 @@ nav {
   .date {
     @include prefix-property(transition, .2s);
     color: $medium-gray;
-    display: block;
+    display: none;
     font-size: .75em;
     font-weight: $regular;
     white-space: nowrap;
+
+    @media #{$medium} {
+      display: block;
+    }
   }
 }
 
