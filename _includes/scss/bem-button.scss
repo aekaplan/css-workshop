@@ -1,0 +1,25 @@
+// Block
+.button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-weight: 700;
+  margin: 0;
+  padding: 1em 4em;
+  text-align: center;
+  text-decoration: none;
+}
+
+// Modifiers
+.button--primary { background: #27AE60; }
+.button--secondary { background: #ae2775; }
+
+// is-state of Block/Element
+.button.is-disabled { background: #ccc; }
