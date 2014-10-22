@@ -1,0 +1,24 @@
+.box {
+  z-index: 999;
+  padding: .5em;
+  margin-bottom: 1em;
+  color: #333;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #ddd;
+  width: 100%;
+}
+
+/* Alphabetized */
+.box {
+  border: 1px solid #ddd;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  color: #333;
+  margin-bottom: 1em;
+  padding: .5em;
+  width: 100%;
+  z-index: 999;
+}

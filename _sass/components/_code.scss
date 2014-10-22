@@ -5,6 +5,7 @@
 .example {
   @include prefix-property(border-radius, 3px);
   border: 1px solid $border-light;
+  font-size: .875em;
   margin-bottom: 1.5em;
   padding: 1em;
   padding-top: 2.5em;
@@ -24,6 +25,10 @@
 
   &.html {
     &:before { content: "HTML"; }
+  }
+
+  &.css {
+    &:before { content: "CSS"; }
   }
 
   &.scss {

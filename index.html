@@ -7,6 +7,62 @@ day-1: true
 <section>
   <div class="container">
     <h2 id="normalize">Normalize <a class="content-link icon-link" href="#normalize"></a></h2>
-    <p>Coming Soon!</p>
+    <p>Resets remove the default styles for all elements while normalize retains most of the useful default browser styles. It also corrects bugs commonly found in browser inconsistencies and doesn’t clutter your debugging tool.</p>
+    <p><a href="http://necolas.github.io/normalize.css/" target="_blank">Download Normalize</a></p>
+
+
+    <div class="example">
+      <button class="copy-button">Copy</button>
+      <div class='copy-area'>
+        {% highlight scss %}
+          {% include scss/normalize.scss %}
+        {% endhighlight %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2 id="organize">Organize <a class="content-link icon-link" href="#organize"></a></h2>
+    <p>Organize your CSS code to reflect the flow of your website’s layout. For example, your navigation CSS should be at the top of your file and your footer should be closer to the bottom.</p>
+    <p>Put properties related to one another close together and use comments sparingly to break up the different sections of your CSS. The combination of a few comments and grouping similar elements together will make it much easier to quickly find what your looking for.</p>
+    <p>Comment guidlines from <a href="https://github.com/necolas/idiomatic-css#comments" target="_blank">principles of writing consistent, idiomatic CSS</a>. Box-sizing CSS from <a href="http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/" target="_blank">box-sizing best practices</a>.</p>
+    <div class="example">
+      <button class="copy-button">Copy</button>
+      <div class='copy-area'>
+        {% highlight scss %}
+          {% include scss/comments.scss %}
+        {% endhighlight %}
+      </div>
+    </div>
+
+    <div class="example css">
+      <button class="copy-button">Copy</button>
+      <div class='copy-area'>
+        {% highlight scss %}
+          {% include scss/organize.scss %}
+        {% endhighlight %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2 id="alphabetize">Alphabetize <a class="content-link icon-link" href="#alphabetize"></a></h2>
+    <p>Write your CSS properties in alphabetical order; it will help reduce the time it takes to find a specific property. Read <a href="http://jenmyers.tumblr.com/post/45339751868/why-you-should-order-css-properties-alphabetically" target="_blank">why you should order CSS properties alphabetically</a>.</p>
+
+    <p>Don’t worry about alphabetizing vendor prefixes (like border-radius, for example) with the rest of your properties, as you will want to keep those grouped together. Make sure you place unprefixed versions last (browsers read your styles from top to bottom) as browsers are largely moving away from vendor prefixes.</p>
+    <p>In this example, the alphabetized CSS is easier to skim through because we know the z-index will always be at the bottom.</p>
+
+    <div class="example css">
+      <button class="copy-button">Copy</button>
+      <div class='copy-area'>
+        {% highlight scss %}
+          {% include scss/alphabetize.scss %}
+        {% endhighlight %}
+      </div>
+    </div>
   </div>
 </section>
