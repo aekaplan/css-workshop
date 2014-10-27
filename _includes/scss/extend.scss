@@ -1,0 +1,5 @@
+.row {
+  @extend %clearfix;
+  border: 1px solid #ddd;
+  margin: 1em 0;
+}

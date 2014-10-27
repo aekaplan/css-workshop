@@ -1,0 +1,137 @@
+---
+layout: default
+title: Part 3
+part-3: true
+---
+
+<section>
+  <div class="container">
+    <h2 id="directory-structure">Directory structure <a class="content-link icon-link" href="#directory-structure"></a></h2>
+    <p>Partials are organzied by components, mixins, and settings.</p>
+
+    <div class="example">
+      <button class="copy-button">Copy</button>
+      <div class='copy-area'>
+        {% highlight html %}
+          {% include html/directory.html %}
+        {% endhighlight %}
+      </div>
+    </div>
+
+    <h3>Primary stylesheet</h3>
+    <p>The primary stylesheet <code>settings.scss</code> allows you to keep everything
+       nice and clean. The order is important because stylesheets read from top to bottom,
+      and styles are applied on top of one another. <code>Sass</code> supports <a href="http://sass-lang.com/documentation/file.SASS_REFERENCE.html#comments" target="_blank">single-line comments</a> with <code>//</code>.</p>
+
+    <div class="example scss">
+      <button class="copy-button">Copy</button>
+      <div class='copy-area'>
+        {% highlight scss %}
+          {% include scss/basement.scss %}
+        {% endhighlight %}
+      </div>
+    </div>
+
+    <h3>Settings</h3>
+    <p>The settings partial contains all your variables and should not include any <code>Sass</code> that outputs <code>CSS</code>.</p>
+
+    <div class="example scss">
+      <button class="copy-button">Copy</button>
+      <div class='copy-area'>
+        {% highlight scss %}
+          {% include scss/settings.scss %}
+        {% endhighlight %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2 id="media-queries">Media Queries <a class="content-link icon-link" href="#media-queries"></a></h2>
+    <p>Introduce layout-specific rules only when you need them. Use <code>min-width</code> to layer complexity on your layout as the viewport widens. It’s easier to have all the media queries nested and nearby, rather than at the end of the stylesheet or in a separate document.</p>
+
+    <p>Read my <a href="http://www.adamkaplan.me/grid/" target="_blank">guide to responsive design</a> to learn more.</p>
+
+    <div class="example">
+      <ul class="schedule">
+        <li class="schedule__item">1</li>
+        <li class="schedule__item">2</li>
+        <li class="schedule__item">3</li>
+        <li class="schedule__item">4</li>
+        <li class="schedule__item">5</li>
+        <li class="schedule__item">6</li>
+      </ul>
+    </div>
+
+    <div class="example html">
+      <button class="copy-button">Copy</button>
+      <div class="copy-area">
+        {% highlight html %}
+          {% include html/media-queries.html %}
+        {% endhighlight %}
+      </div>
+    </div>
+
+    <div class="example scss">
+      <button class="copy-button">Copy</button>
+      <div class="copy-area">
+        {% highlight scss %}
+          {% include scss/media-queries.scss %}
+        {% endhighlight %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2 id="mixins">Mixins <a class="content-link icon-link" href="#mixins"></a></h2>
+    <p>Mixins are one of Sass’s most powerful features. They allow re-use of styles without having to memorize or copy and paste them.</p>
+
+    <div class="example scss">
+      <button class="copy-button">Copy</button>
+      <div class="copy-area">
+        {% highlight scss %}
+          {% include scss/mixins.scss %}
+        {% endhighlight %}
+      </div>
+    </div>
+
+    <div class="example scss">
+      <button class="copy-button">Copy</button>
+      <div class="copy-area">
+        {% highlight scss %}
+          {% include scss/mixins-example.scss %}
+        {% endhighlight %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2 id="extend">Extend <a class="content-link icon-link" href="#extend"></a></h2>
+    <p><code>Sass</code> brings a bunch of benefits over plain ‘ole <code>CSS</code> like nesting and <code>@extend</code>, which we can use to make a better clearfix. <code>@extend</code> basically tells <code>Sass</code> that one selector should inherit the styles of another selector.</p>
+
+    <div class="example scss">
+      <button class="copy-button">Copy</button>
+      <div class="copy-area">
+        {% highlight scss %}
+          {% include scss/clearfix.scss %}
+        {% endhighlight %}
+      </div>
+    </div>
+
+    <p><code>Sass</code> supports the special placeholder selector <code>%</code>, a silent class, which only compiles to <code>CSS</code> until we use it, eliminating repetitive <code>CSS</code>! You can use these to replace the class/id selectors.</p>
+
+    <div class="example scss">
+      <button class="copy-button">Copy</button>
+      <div class="copy-area">
+        {% highlight scss %}
+          {% include scss/extend.scss %}
+        {% endhighlight %}
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,34 @@
+/* ==========================================================================
+   Schedule Example
+   ========================================================================== */
+
+.schedule {
+  @extend %clearfix;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Small screens (default) */
+.schedule__item {
+  @include prefix-property(border-radius, 6px);
+  @include prefix-property(transition, background .5s);
+  background: #fb917e;
+  border: 3px solid $white;
+  color: $white;
+  padding: .5em;
+  text-align: center;
+
+  /* Medium screens */
+  @media #{$medium} {
+    background: #fbd07e;
+    float: left;
+    width: 50%;
+  }
+
+  /* Large screens */
+  @media #{$large} {
+    background: #7ea9fb;
+    width: 33.333%;
+  }
+}

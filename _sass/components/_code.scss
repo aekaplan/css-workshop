@@ -37,6 +37,38 @@
 }
 
 /* ==========================================================================
+   Schedule Example
+   ========================================================================== */
+
+.schedule {
+  @extend %clearfix;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.schedule__item {
+  @include prefix-property(border-radius, 6px);
+  @include prefix-property(transition, background .5s);
+  background: #e88370;
+  border: 3px solid $white;
+  color: $white;
+  padding: .5em;
+  text-align: center;
+
+  @media #{$medium} {
+    background: #e8bf70;
+    float: left;
+    width: 50%;
+  }
+
+  @media #{$large} {
+    background: #7099e8;
+    width: 33.333%;
+  }
+}
+
+/* ==========================================================================
    Code/Syntax Highlighting
    ========================================================================== */
 
@@ -62,7 +94,6 @@ code {
 
 .highlight  { background: #fff; }
 .highlight .c { color: #bbb; font-style: italic; } /* Comment */
-.highlight .err { color: #a61717; background-color: #e3d2d2; } /* Error */
 .highlight .k { font-weight: bold; } /* Keyword */
 .highlight .o { font-weight: bold; } /* Operator */
 .highlight .cm { color: #bbb; font-style: italic; } /* Comment.Multiline */

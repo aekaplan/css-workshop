@@ -1,0 +1,9 @@
+.schedule__item {
+  @include ellipsis;
+  @include prefix-property(border-radius, 6px);
+  @include prefix-property(transition, .5s);
+  background: #fb917e;
+  color: $white;
+  padding: .5em;
+  text-align: center;
+}

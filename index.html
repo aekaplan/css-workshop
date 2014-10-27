@@ -1,15 +1,13 @@
 ---
 layout: default
-title: Day 1
-day-1: true
+title: Part 1
+part-1: true
 ---
 
 <section>
   <div class="container">
     <h2 id="normalize">Normalize <a class="content-link icon-link" href="#normalize"></a></h2>
-    <p>Browsers will render your CSS differently. To avoid this, it’s a good idea to use a modern alternative to a reset like Normalize.css, which will render elements more consistently cross-browser. Remember to include it as-is before your stylesheet.</p>
-    <p><a href="http://necolas.github.io/normalize.css/" target="_blank">Download Normalize</a></p>
-
+    <p>Browsers will render your <code>CSS</code> differently. To avoid this, it’s a good idea to use a modern alternative to a reset like <a href="http://necolas.github.io/normalize.css/" target="_blank">normalize.css</a>, which will render elements more consistently cross-browser. Remember to include it as-is before your stylesheet.</p>
 
     <div class="example">
       <button class="copy-button">Copy</button>
@@ -25,9 +23,9 @@ day-1: true
 <section>
   <div class="container">
     <h2 id="organize">Organize <a class="content-link icon-link" href="#organize"></a></h2>
-    <p>Organize your CSS code to reflect the flow of your website’s layout. For example, your navigation CSS should be at the top of your file and your footer should be closer to the bottom.</p>
-    <p>Put properties related to one another close together and use comments sparingly to break up the different sections of your CSS. The combination of a few comments and grouping similar elements together will make it much easier to quickly find what your looking for.</p>
-    <p>Comment guidelines from <a href="https://github.com/necolas/idiomatic-css#comments" target="_blank">principles of writing consistent, idiomatic CSS</a>. Box-sizing CSS from <a href="http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/" target="_blank">box-sizing best practices</a>.</p>
+    <p>Organize your <code>CSS</code> code to reflect the flow of your website’s layout. For example, your navigation <code>CSS</code> should be at the top of your file and your footer should be closer to the bottom.</p>
+    <p>Put properties related to one another close together and use comments sparingly to break up the different sections of your <code>CSS</code>. The combination of a few comments and grouping similar elements together will make it much easier to quickly find what your looking for.</p>
+    <p>Comment guidelines from <a href="https://github.com/necolas/idiomatic-css#comments" target="_blank">principles of writing consistent, idiomatic CSS</a>. <code>Box-sizing</code> <code>CSS</code> from <a href="http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/" target="_blank">box-sizing best practices</a>.</p>
     <div class="example">
       <button class="copy-button">Copy</button>
       <div class='copy-area'>
@@ -51,10 +49,10 @@ day-1: true
 <section>
   <div class="container">
     <h2 id="alphabetize">Alphabetize <a class="content-link icon-link" href="#alphabetize"></a></h2>
-    <p>Write your CSS properties in alphabetical order; it will help reduce the time it takes to find a specific property. Read <a href="http://jenmyers.tumblr.com/post/45339751868/why-you-should-order-css-properties-alphabetically" target="_blank">why you should order CSS properties alphabetically</a>.</p>
+    <p>Write your <code>CSS</code> properties in alphabetical order; it will help reduce the time it takes to find a specific property. Read <a href="http://jenmyers.tumblr.com/post/45339751868/why-you-should-order-css-properties-alphabetically" target="_blank">why you should order CSS properties alphabetically</a>.</p>
 
-    <p>Don’t worry about alphabetizing vendor prefixes (like border-radius, for example) with the rest of your properties, as you will want to keep those grouped together. Make sure you place unprefixed versions last (browsers read your styles from top to bottom) as browsers are largely moving away from vendor prefixes.</p>
-    <p>In this example, the alphabetized CSS is easier to skim through because we know the z-index will always be at the bottom.</p>
+    <p>Don’t worry about alphabetizing vendor prefixes (like <code>border-radius</code>, for example) with the rest of your properties, as you will want to keep those grouped together. Make sure you place unprefixed versions last (browsers read your styles from top to bottom) as browsers are largely moving away from vendor prefixes.</p>
+    <p>In this example, the alphabetized <code>CSS</code> is easier to skim through because we know the <code>z-index</code> will always be at the bottom.</p>
 
     <div class="example css">
       <button class="copy-button">Copy</button>
@@ -63,6 +61,38 @@ day-1: true
           {% include scss/alphabetize.scss %}
         {% endhighlight %}
       </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2 id="headers">Headers <a class="content-link icon-link" href="#headers"></a></h2>
+    <p>Keep single selectors to one line, even when grouping multiple selectors into one declaration.</p>
+
+    <div class="example css">
+      <button class="copy-button">Copy</button>
+      <div class="copy-area">
+        {% highlight scss %}
+          {% include scss/headers.scss %}
+        {% endhighlight %}
+      </div>
+    </div>
+
+    <div class="example html">
+      <button class="copy-button">Copy</button>
+      <div class="copy-area">
+        {% highlight html %}
+          {% include html/headers.html %}
+        {% endhighlight %}
+      </div>
+    </div>
+
+    <div class="example">
+      <h1>Heading 1</h1>
+      <h2>Heading 2</h2>
+      <h3>Heading 3</h3>
+      <h4>Heading 4</h4>
     </div>
   </div>
 </section>
