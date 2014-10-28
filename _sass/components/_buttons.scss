@@ -1,3 +1,7 @@
+/* ==========================================================================
+   Copy Button
+   ========================================================================== */
+
 .copy-button {
   @include prefix-property(appearance, none);
   @include prefix-property(border-radius, 0 3px);
