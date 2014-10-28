@@ -13,7 +13,7 @@
 .schedule__item {
   @include prefix-property(border-radius, 6px);
   @include prefix-property(transition, background .5s);
-  background: #fb917e;
+  background: #e88370;
   border: 3px solid $white;
   color: $white;
   padding: .5em;
@@ -21,14 +21,14 @@
 
   /* Medium screens */
   @media #{$medium} {
-    background: #fbd07e;
+    background: #e8bf70;
     float: left;
     width: 50%;
   }
 
   /* Large screens */
   @media #{$large} {
-    background: #7ea9fb;
+    background: #7099e8;
     width: 33.333%;
   }
 }
