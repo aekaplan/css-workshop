@@ -1,8 +1,8 @@
 .button-blue {
-  background: #7099e8;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  background: #7099e8;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
@@ -11,17 +11,16 @@
   cursor: pointer;
   display: block;
   font-weight: 700;
-  margin: 0;
   padding: 1em 4em;
   text-align: center;
   text-decoration: none;
 }
 
 .button-red {
-  background: #e88370;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  background: #e88370;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
@@ -30,7 +29,6 @@
   cursor: pointer;
   display: block;
   font-weight: 700;
-  margin: 0;
   padding: 1em 4em;
   text-align: center;
   text-decoration: none;
