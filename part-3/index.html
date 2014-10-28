@@ -6,7 +6,13 @@ part-3: true
 
 <section>
   <div class="container">
-    <h2 id="directory-structure">Directory structure <a class="content-link icon-link" href="#directory-structure"></a></h2>
+    <h2 id="directory-structure">Why Sass?</h2>
+    <p>At a high level, <a href="http://sass-lang.com/" target="_blank">Sass</a> is simply a CSS preprocessor thats provides more features than using plain <code>CSS</code> alone.</p>
+</section>
+
+<section>
+  <div class="container">
+    <h2 id="directory-structure">Setting up your directory structure <a class="content-link icon-link" href="#directory-structure"></a></h2>
     <p>Partials are organzied by components, mixins, and settings.</p>
 
     <div class="example">
@@ -18,8 +24,8 @@ part-3: true
       </div>
     </div>
 
-    <h3>Primary stylesheet</h3>
-    <p>The primary stylesheet <code>settings.scss</code> allows you to keep everything
+    <h3>Create a primary stylesheet</h3>
+    <p>The primary stylesheet <code>main.scss</code> allows you to keep everything
        nice and clean. The order is important because stylesheets read from top to bottom,
       and styles are applied on top of one another. <code>Sass</code> supports <a href="http://sass-lang.com/documentation/file.SASS_REFERENCE.html#comments" target="_blank">single-line comments</a> with <code>//</code>.</p>
 
@@ -27,13 +33,13 @@ part-3: true
       <button class="copy-button">Copy</button>
       <div class='copy-area'>
         {% highlight scss %}
-          {% include scss/basement.scss %}
+          {% include scss/main.scss %}
         {% endhighlight %}
       </div>
     </div>
 
-    <h3>Settings</h3>
-    <p>The settings partial contains all your variables and should not include any <code>Sass</code> that outputs <code>CSS</code>.</p>
+    <h3>Build a settings file</h3>
+    <p>The <code>settings.scss</code> partial contains all your variables and should not include any <code>Sass</code> that outputs <code>CSS</code>.</p>
 
     <div class="example scss">
       <button class="copy-button">Copy</button>
@@ -48,7 +54,7 @@ part-3: true
 
 <section>
   <div class="container">
-    <h2 id="media-queries">Media Queries <a class="content-link icon-link" href="#media-queries"></a></h2>
+    <h2 id="media-queries">Mobile first media queries <a class="content-link icon-link" href="#media-queries"></a></h2>
     <p>Introduce layout-specific rules only when you need them. Use <code>min-width</code> to layer complexity on your layout as the viewport widens. It’s easier to have all the media queries nested and nearby, rather than at the end of the stylesheet or in a separate document.</p>
 
     <p>Read my <a href="http://www.adamkaplan.me/grid/" target="_blank">guide to responsive design</a> to learn more.</p>
@@ -86,7 +92,7 @@ part-3: true
 
 <section>
   <div class="container">
-    <h2 id="mixins">Mixins <a class="content-link icon-link" href="#mixins"></a></h2>
+    <h2 id="mixins">DRY up with mixins <a class="content-link icon-link" href="#mixins"></a></h2>
     <p>Mixins are one of Sass’s most powerful features. They allow re-use of styles without having to memorize or copy and paste them.</p>
 
     <div class="example scss">
@@ -111,7 +117,7 @@ part-3: true
 
 <section>
   <div class="container">
-    <h2 id="extend">Extend <a class="content-link icon-link" href="#extend"></a></h2>
+    <h2 id="extend">Eliminate repetitive CSS with extend <a class="content-link icon-link" href="#extend"></a></h2>
     <p><code>Sass</code> brings a bunch of benefits over plain ‘ole <code>CSS</code> like nesting and <code>@extend</code>, which we can use to make a better clearfix. <code>@extend</code> basically tells <code>Sass</code> that one selector should inherit the styles of another selector.</p>
 
     <div class="example scss">

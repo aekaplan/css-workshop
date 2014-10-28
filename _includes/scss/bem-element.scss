@@ -2,10 +2,10 @@
 .schedule {...}
 
 // Element
-.schedule__item {...}
+.schedule__item {
+  // is-state
+  &.is-selected {...}
+}
 
 // Modifier
 .schedule--dark {...}
-
-// is-state of Block/Element
-.schedule.is-selected {...}

@@ -1,8 +1,8 @@
-// Block
-.button {...}
+// Block (Highest level)
+.block {...}
 
-// Modifier
-.button--primary {...}
+// Element (Descendent of block)
+.block__element {...}
 
-// is-state of Block/Element
-.button.is-disabled {...}
+// Modifier (Different state or version)
+.block--modifier {...}

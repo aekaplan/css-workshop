@@ -5,7 +5,7 @@ part-2: true
 ---
 <section>
   <div class="container">
-    <h2 id="reuseable-css">Reuseable CSS <a class="content-link icon-link" href="#reuseable-css"></a></h2>
+    <h2 id="reuseable-css">Reuse your CSS <a class="content-link icon-link" href="#reuseable-css"></a></h2>
     <p><a href="http://en.wikipedia.org/wiki/Don't_repeat_yourself" target="_blank">DRY</a> up your code! Repeating yourself leads to huge <code>CSS</code> files and unnecessary code bloat. Take the time to plan out your elements in a simple and reusable way. Reuse your classes and tag on additional classes when needed.</p>
 
     <p>Here’s some really repetitive code:</p>
@@ -48,8 +48,8 @@ part-2: true
       </div>
     </div>
 
-    <h2 id="bem">BEM Methodology <a class="content-link icon-link" href="#bem"></a></h2>
-    <p>We can take our <code>HTML</code> and <code>CSS</code> a step further by using <a href="http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/" target="_blank">BEM (Block, Element, Modifier) methodology</a> with <code>is-state</code> <a href="https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md#is-stateOfComponent" target="_blank">SUIT naming conventions</a>. What you end up with is more meaningful class names that will make it easier for everyone to understand and work on.</p>
+    <h2 id="naming-conventions">Use naming conventions <a class="content-link icon-link" href="#naming-conventions"></a></h2>
+    <p>We can take our <code>HTML</code> and <code>CSS</code> a step further by using <a href="http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/" target="_blank">BEM (Block, Element, Modifier) methodology</a>. What you end up with is more meaningful class names that will make it easier for everyone to understand and work on.</p>
 
     <div class="example css">
       <button class="copy-button">Copy</button>
@@ -59,8 +59,6 @@ part-2: true
         {% endhighlight %}
       </div>
     </div>
-
-    <p>Never style <code>is-state</code> classes directly; always use with adjoining class.</p>
 
     <div class="example css">
       <button class="copy-button">Copy</button>
@@ -80,9 +78,41 @@ part-2: true
       </div>
     </div>
 
-    <p>Here is an example of a schedule using BEM methodology with an element:</p>
+    <h3>is-state</h3>
+
+    <p>Use <a href="https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md#is-stateOfComponent" target="_blank">is-state naming conventions</a> to reflect the change of a block/element state. Never style <code>is-state</code> classes by themselves; always use with adjoining class or nest them using <code>Sass</code> to avoid cross-class confusion.</p>
 
     <div class="example css">
+      <button class="copy-button">Copy</button>
+      <div class='copy-area'>
+        {% highlight scss %}
+          {% include scss/is-state-css.scss %}
+        {% endhighlight %}
+      </div>
+    </div>
+
+    <div class="example scss">
+      <button class="copy-button">Copy</button>
+      <div class='copy-area'>
+        {% highlight scss %}
+          {% include scss/is-state.scss %}
+        {% endhighlight %}
+      </div>
+    </div>
+
+    <div class="example html">
+      <button class="copy-button">Copy</button>
+      <div class='copy-area'>
+        {% highlight html %}
+          {% include html/is-state.html %}
+        {% endhighlight %}
+      </div>
+    </div>
+
+    <h3>Bringing it all together</h3>
+    <p>Here is an example of a schedule component using BEM and <code>is-state</code>:</p>
+
+    <div class="example scss">
       <button class="copy-button">Copy</button>
       <div class='copy-area'>
         {% highlight scss %}
