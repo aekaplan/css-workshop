@@ -17,6 +17,7 @@ body {
   font: $body-font;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 
   @media #{$medium} {
     font-size: 112%;
@@ -148,9 +149,38 @@ nav {
 }
 
 /* ==========================================================================
-   Footer
+   Footer Nav
    ========================================================================== */
 
-   footer {
-    a { font-size: .9em; }
+.footer-nav {
+  @extend %clearfix;
+  border-left: 1px solid $border-light;
+  border-right: 1px solid $border-light;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  .footer-nav-item {
+    color: $gray;
+    display: block;
+    float: left;
+    padding: 2em;
+    text-align: center;
+    text-decoration: none;
+    @include prefix-property(transition, .2s);
+    width: 50%;
+
+    &:hover { color: $black }
+
+    &.is-solo { width: 100%; }
+    &.footer-nav-right { border-left: 1px solid $border-light; }
+
+    .footer-nav-title {
+      display: none;
+
+      @media #{$medium} {
+        display: inline;
+      }
+    }
   }
+}
