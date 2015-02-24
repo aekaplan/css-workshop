@@ -10,8 +10,12 @@
   #{$property}: $value;
 }
 
-@mixin transition($arguments) {
-  @include prefix-property(transition, $arguments);
+@mixin transition($var...) {
+  -webkit-transition: $var;
+  -moz-transition: $var;
+  -ms-transition: $var;
+  -o-transition: $var;
+  transition: $var;
 }
 
 @mixin ellipsis {
