@@ -50,20 +50,20 @@
 .schedule__item {
   @include prefix-property(border-radius, 6px);
   @include prefix-property(transition, background .5s);
-  background: #e88370;
+  background: $red;
   border: 3px solid $white;
   color: $white;
   padding: .5em;
   text-align: center;
 
   @media #{$medium} {
-    background: #e8bf70;
+    background: $yellow;
     float: left;
     width: 50%;
   }
 
   @media #{$large} {
-    background: #7099e8;
+    background: $blue;
     width: 33.333%;
   }
 }
