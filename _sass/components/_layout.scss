@@ -47,15 +47,21 @@ section {
 
 .logo { font-size: 2em; }
 
+.logo-books {
+  background: url(/images/books.svg) no-repeat;
+  display: block;
+  height: 96px;
+  margin: 0 auto 1em auto;
+  width: 150px;
+}
+
 /* ==========================================================================
    Hero
    ========================================================================== */
 
 .hero {
-  background: $black url("../images/stars.png") repeat;
-  background-size: 700px 700px;
-  color: $white;
-  overflow: hidden;
+  background: $yellow;
+  color: $black;
   text-align: center;
 
   .container {
@@ -65,8 +71,6 @@ section {
       padding: 4em 0;
     }
   }
-
-  a { color: $yellow; }
 }
 
 /* ==========================================================================
@@ -84,7 +88,7 @@ section {
 
 nav {
   @include prefix-property(border-radius, 3px);
-  border: 1px solid $border-medium;
+  border: 1px solid $black;
   margin-top: 2.5em;
   overflow: hidden;
 
@@ -96,45 +100,27 @@ nav {
   }
 
   .current .nav-item {
-    background: #3e413d;
+    background: $black;
     color: $yellow;
-
-    .date { color: $white; }
   }
 
   .nav-item {
-    background: $black;
     @include prefix-property(transition, .2s);
-    color: $medium-gray;
+    color: $black;
     float: left;
     padding: 1em;
     text-align: center;
-    width: 33.33333%;
+    width: 33.333%;
     text-decoration: none;
 
     &.add-border {
-      border-left: 1px solid $border-medium;
-      border-right: 1px solid $border-medium;
+      border-left: 1px solid $black;
+      border-right: 1px solid $black;
     }
 
     &:hover {
-      background: #3e413d;
+      background: $black;
       color: $yellow;
-
-      .date { color: $white; }
-    }
-  }
-
-  .date {
-    @include prefix-property(transition, .2s);
-    color: $medium-gray;
-    display: none;
-    font-size: .75em;
-    font-weight: $regular;
-    white-space: nowrap;
-
-    @media #{$medium} {
-      display: block;
     }
   }
 }
